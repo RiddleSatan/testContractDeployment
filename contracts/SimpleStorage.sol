@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.24;
 
-contract simpleStorage {
+contract SimpleStorage {
     uint256 public myfavNum;
 
     function store(uint256 _favNum) public virtual {
