@@ -10,10 +10,15 @@
   "description": "",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.10"
+    "chai": "^4.5.0",
+    "hardhat": "^2.22.10",
+    "mocha": "^10.7.3"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "install": "^0.13.0",
+    "npm": "^10.8.3"
   }
 }
