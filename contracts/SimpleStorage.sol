@@ -8,15 +8,15 @@ contract SimpleStorage {
         myfavNum = _favNum;
     }
 
-    struct Person{
+    struct Person {
         uint256 favNum;
         string name;
-    }  
+    }
 
-    //dynamic array   
+    //dynamic array
     Person[] public listOfPeople;
 
-    mapping(string=>uint256) public nameToFavNum;
+    mapping(string => uint256) public nameToFavNum;
 
     //view ,pure  : uisng these function wont cost any transaction as they only read value while if we modify a value it will cost/make a transaction
     function getVal() public view returns (uint256) {
@@ -27,10 +27,10 @@ contract SimpleStorage {
     //     return 8;
     // }
 
-//    calldata (temp variable that cannot be modifed),memory,storage
+    //    calldata (temp variable that cannot be modifed),memory,storage
 
     function addPerson(string memory _name, uint256 _favNumber) public {
-        listOfPeople.push( Person({name:_name,favNum:_favNumber}) );
-        nameToFavNum[_name]=_favNumber;
+        listOfPeople.push(Person({name: _name, favNum: _favNumber}));
+        nameToFavNum[_name] = _favNumber;
     }
 }
